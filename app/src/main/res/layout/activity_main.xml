@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_main_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textColor="@color/colorAccent" />
+
+
+    <ImageView
+        android:id="@+id/first_image"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btn_shucheng"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书城"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/btn_shujia"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书架"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/btn_shucheng"
+        android:layout_alignBaseline="@id/btn_shucheng"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/btn_xiangfa"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="想法"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/btn_shujia"
+        android:layout_alignBaseline="@id/btn_shujia"
+        android:layout_margin="5dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/btn_wode"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/btn_xiangfa"
+        android:layout_alignBaseline="@id/btn_shujia"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

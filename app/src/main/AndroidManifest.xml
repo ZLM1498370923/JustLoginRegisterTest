@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.justloginregistertest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="阅读时光"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".loginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NoteActivity" />
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".EditActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ShowBookActivity" />
+        <activity android:name=".ReadBookActivity" />
+        <activity android:name=".Main3Activity"></activity>
+    </application>
+
+</manifest>
