@@ -23,6 +23,7 @@ import java.util.List;
 public class NoteActivity extends AppCompatActivity {
     DBService myDb;
     private Button mBtnAdd;
+    private Button btn_bijiback;
     private ListView lv_note;
 
     @Override
@@ -36,6 +37,7 @@ public class NoteActivity extends AppCompatActivity {
     public void init() {
         mBtnAdd = this.findViewById(R.id.btn_add);
         lv_note = this.findViewById(R.id.lv_note);
+        btn_bijiback = this.findViewById(R.id.btn_bijiback);
         List<Values> valuesList = new ArrayList<>();
         SQLiteDatabase db = myDb.getReadableDatabase();
 
@@ -71,6 +73,14 @@ public class NoteActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NoteActivity.this, EditActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_bijiback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NoteActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

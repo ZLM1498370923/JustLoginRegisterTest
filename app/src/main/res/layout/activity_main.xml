@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
@@ -16,19 +18,13 @@
     <ImageView
         android:id="@+id/first_image"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
         android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/btn_shucheng"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="书城"
-        android:textSize="30sp"
-        android:layout_marginBottom="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="5dp" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
 
     <Button
         android:id="@+id/btn_shujia"
@@ -37,8 +33,6 @@
         android:layout_height="wrap_content"
         android:text="书架"
         android:textSize="30sp"
-        android:layout_toRightOf="@id/btn_shucheng"
-        android:layout_alignBaseline="@id/btn_shucheng"
         android:layout_margin="5dp" />
 
     <Button
@@ -48,8 +42,6 @@
         android:layout_height="wrap_content"
         android:text="想法"
         android:textSize="30sp"
-        android:layout_toRightOf="@id/btn_shujia"
-        android:layout_alignBaseline="@id/btn_shujia"
         android:layout_margin="5dp"
         android:onClick="onClick" />
 
@@ -60,10 +52,9 @@
         android:layout_height="wrap_content"
         android:text="我的"
         android:textSize="30sp"
-        android:layout_margin="5dp"
-        android:layout_toRightOf="@id/btn_xiangfa"
-        android:layout_alignBaseline="@id/btn_shujia"
-        android:layout_alignParentEnd="true" />
+        android:layout_margin="5dp" />
+
+   </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_xiangfa:
-                Intent intent2 = new Intent(this, Main2Activity.class);
+                Intent intent2 = new Intent(this, NoteActivity.class);
                 startActivity(intent2);
                 finish();
                 break;
